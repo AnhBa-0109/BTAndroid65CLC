@@ -1,1 +1,0 @@
-Tôi tên Quốc Khánh

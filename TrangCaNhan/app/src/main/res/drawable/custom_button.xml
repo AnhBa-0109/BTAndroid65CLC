@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#242760" />          <!-- màu nền -->
+    <corners android:radius="11dp" />         <!-- bo tròn góc -->
+    <padding
+        android:left="100dp"
+        android:top="5dp"
+        android:right="10dp"
+        android:bottom="5dp" />
+</shape>

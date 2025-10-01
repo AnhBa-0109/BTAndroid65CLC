@@ -11,21 +11,7 @@ Các bài tập được chia theo từng chủ đề:
 
 - 🎨 Custom View & Style
 
-- 🔄 Intent & Activity
-
-- 🗃️ RecyclerView & Adapter
-
 - 💾 SQLite / Room Database
-
-- 🌐 API & Retrofit
-
-- ⚙️ MVVM / ViewModel / LiveData
-
-- 🧩 Fragment & Navigation Component
-
-- 🔐 Authentication (Firebase / API)
-
-- 📦 Project mini / app mẫu
 
 ⚙️ Công nghệ sử dụng
 

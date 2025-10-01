@@ -1,6 +1,7 @@
 package ntu.anhba.calculator;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,8 +28,63 @@ public class MainActivity extends AppCompatActivity {
         btnChia = findViewById(R.id.btnChia);
         tvKetQua = findViewById(R.id.tvKetqua);
     }
-    public void HamTinhTong()
+    public void HamTinhTong(View view)
     {
-        
+        String strSoA = edit1.getText().toString();
+        String strSoB = edit2.getText().toString();
+
+        double SoA = Double.parseDouble(strSoA);
+        double SoB = Double.parseDouble(strSoB);
+
+        double Tong = SoA + SoB;
+
+        String strTong = String.valueOf(Tong);
+
+        tvKetQua.setText(strTong);
+    }
+
+    public void HamTinhTru(View view)
+    {
+        String strSoA = edit1.getText().toString();
+        String strSoB = edit2.getText().toString();
+
+        double SoA = Double.parseDouble(strSoA);
+        double SoB = Double.parseDouble(strSoB);
+
+        double Tong = SoA - SoB;
+
+        String strTong = String.valueOf(Tong);
+
+        tvKetQua.setText(strTong);
+    }
+
+    public void HamTinhNhan(View view)
+    {
+        String strSoA = edit1.getText().toString();
+        String strSoB = edit2.getText().toString();
+
+        double SoA = Double.parseDouble(strSoA);
+        double SoB = Double.parseDouble(strSoB);
+
+        double Tong = SoA * SoB;
+
+        String strTong = String.valueOf(Tong);
+
+        tvKetQua.setText(strTong);
+    }
+
+    public void HamTinhChia(View view)
+    {
+        String strSoA = edit1.getText().toString();
+        String strSoB = edit2.getText().toString();
+
+        double SoA = Double.parseDouble(strSoA);
+        double SoB = Double.parseDouble(strSoB);
+
+        double Tong = SoA / SoB;
+
+        String strTong = String.valueOf(Tong);
+
+        tvKetQua.setText(strTong);
     }
 }

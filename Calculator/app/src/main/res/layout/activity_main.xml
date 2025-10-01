@@ -4,21 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/mainlayout"
-    android:background="#FFF">
+    android:id="@+id/mainlayout">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:gravity="center"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:background="#F0BEC9"
         android:text="CÁC PHÉP TOÁN SỐ HỌC">
     </TextView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:layout_margin="5dp">
+        android:layout_marginTop="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,8 +64,12 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:onClick="HamTinhTong"
+            android:backgroundTint="#D1C8EC"
             android:layout_marginEnd="20dp"
-            android:text=""
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="+"
             app:cornerRadius="11dp">
         </Button>
         <Button
@@ -73,8 +77,10 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginEnd="20dp"
-            android:onClick="HamTinhTong"
-            android:text=""
+            android:onClick="HamTinhTru"
+            android:backgroundTint="#DFF7C4"
+            android:textSize="40sp"
+            android:text="-"
             app:cornerRadius="11dp">
         </Button>
         <Button
@@ -82,16 +88,21 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginEnd="20dp"
-            android:onClick="HamTinhTong"
-            android:text=""
+            android:backgroundTint="#F7C2DE"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:onClick="HamTinhNhan"
+            android:text="*"
             app:cornerRadius="11dp">
         </Button>
         <Button
             android:id="@+id/btnChia"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:onClick="HamTinhTong"
-            android:text=""
+            android:backgroundTint="#BEE0E9"
+            android:textSize="30dp"
+            android:onClick="HamTinhChia"
+            android:text="/"
             app:cornerRadius="11dp">
         </Button>
     </LinearLayout>

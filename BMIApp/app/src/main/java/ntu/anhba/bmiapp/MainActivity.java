@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 double NWeight = Double.parseDouble(strWeight);
                 double NHeight = Double.parseDouble(strHeight);
-                
+
 
                 result = NWeight / (convert(NHeight) * convert(NHeight));
 

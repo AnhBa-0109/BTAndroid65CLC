@@ -9,14 +9,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFF"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="51dp"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
                 android:text="BMI CALCULATOR"
                 android:textSize="30dp">
             </TextView>
@@ -26,91 +30,121 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="30dp">
+
             <LinearLayout
                 android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp">
+                android:layout_height="164dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weight"
-                    android:textSize="20dp">
-                </TextView>
-                <EditText
-                    android:layout_width="220dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/weight"
-                    android:inputType="number">
-                </EditText>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/menu_unit1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <AutoCompleteTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Kg">
-                    </AutoCompleteTextView>
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Height"
-                    android:textSize="20dp">
-                </TextView>
-                <EditText
-                    android:layout_width="220dp"
-                    android:id="@+id/height"
-                    android:layout_height="wrap_content"
-                    android:inputType="number">
-                </EditText>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/menu_unit2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <AutoCompleteTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="met">
-                    </AutoCompleteTextView>
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Result"
-                    android:textSize="20dp">
-                </TextView>
-                <TextView
-                    android:layout_width="220dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_result"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="Weight (Kg)"
+                    android:textColor="#3F5D67"
                     android:textSize="30dp">
                 </TextView>
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="220dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="3dp"
+                    android:hint="75"
+                    android:fontFamily="@font/adlam_display"
+                    android:textAlignment="center"
+                    android:textSize="40dp"
+                    android:inputType="number">
+                </EditText>
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="165dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="Height (Cm)"
+                    android:textColor="#3F5D67"
+                    android:textSize="30dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="220dp"
+                    android:fontFamily="@font/adlam_display"
+                    android:layout_height="80dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="3dp"
+                    android:hint="170"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="40dp">
+                </EditText>
+
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
+
                 <Button
-                    android:layout_width="wrap_content"
                     android:id="@+id/btn_calcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#0C5BA4"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="Calculator"
+                    android:textSize="20dp"
+                    app:cornerRadius="10dp"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Calculator">
-                </Button>
+                    android:text="Your Result"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="220dp"
+                    android:layout_height="100dp"
+                    android:hint="22"
+                    android:fontFamily="@font/adlam_display"
+                    android:gravity="center"
+                    android:textSize="50dp">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/tv_status"
+                    android:hint="Bình Thường"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/adlam_display">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
 

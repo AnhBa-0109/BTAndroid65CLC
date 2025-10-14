@@ -15,13 +15,14 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     EditText weight,height;
-    TextView tv_result;
+    TextView tv_result, tv_status;
     Button btn_calcu;
 
     void Link(){
         weight = findViewById(R.id.weight);
         height = findViewById(R.id.height);
         tv_result = findViewById(R.id.tv_result);
+        tv_status = findViewById(R.id.tv_status);
         btn_calcu = findViewById(R.id.btn_calcu);
     }
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 result = NWeight / (convert(NHeight) * convert(NHeight));
 
                 String strResult = String.format("%.2f", result);
-
+                String strStatus = printResult(result);
+                tv_status.setText(strStatus);
                 tv_result.setText(strResult);
             }
         });
@@ -52,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
     double convert(double num){
         return num * 0.01;
     }
-
+    String printResult(double num)
+    {
+        String status = "";
+        if(num < 18.5) status = "Gầy";
+        else if(18.5 <= num && num < 25 ) status = "Bình thường";
+        else if (25 <= num && num < 30) status = "Thừa cân";
+        else status = "Béo phì";
+        return status;
+    }
 
 }

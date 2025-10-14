@@ -23,4 +23,5 @@ Các bài tập được chia theo từng chủ đề:
 - Chọn bài cần chạy trong thư mục tương ứng
 
 Hình ảnh giao diện các bài tập:
-          
+- BMI App:
+![image](https://github.com/AnhBa-0109/BTAndroid65CLC/issues/1#issuecomment-3402502314)

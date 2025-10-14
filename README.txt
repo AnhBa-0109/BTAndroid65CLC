@@ -24,4 +24,4 @@ Các bài tập được chia theo từng chủ đề:
 
 Hình ảnh giao diện các bài tập:
 - BMI App:
-![image](https://github.com/user-attachments/assets/9234daab-f2bc-41f2-9737-33e8815c9137")
+![image](https://github.com/user-attachments/assets/9234daab-f2bc-41f2-9737-33e8815c9137)

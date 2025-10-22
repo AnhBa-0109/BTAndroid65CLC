@@ -25,4 +25,4 @@ Các bài tập được chia theo từng chủ đề:
 Hình ảnh giao diện bài tập:
 - RecyclerView
   
- <img src="./Images/RecyclerView.png" width="250" height="300">
+ <img src="./Images/RecyclerView.png" width="400" height="500">

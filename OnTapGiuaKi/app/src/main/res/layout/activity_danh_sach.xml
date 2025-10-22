@@ -7,4 +7,44 @@
     android:layout_height="match_parent"
     tools:context=".DanhSachActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/header_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lv_dsMon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Danh sách môn học"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dsMon"
+        android:layout_width="409dp"
+        android:layout_height="739dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

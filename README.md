@@ -25,6 +25,6 @@ Các bài tập được chia theo từng chủ đề:
 Hình ảnh giao diện bài tập:
 - RecyclerView
 
-| Input | Result |
-|--------|---------|
+| Input |
+|--------|
 | ![Input](./Images/RecyclerView.png) |

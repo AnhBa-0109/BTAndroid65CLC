@@ -26,4 +26,4 @@ Hình ảnh giao diện bài tập:
 
 | Input | Result |
 |--------|---------|
-| ![Input](./Images/RecyclerView.png) | ![Result](./Images/RecyclerView.png) |
+| ![Input](./Images/BMI.png) | ![Result](./Images/RecyclerView.png) |

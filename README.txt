@@ -23,6 +23,7 @@ Các bài tập được chia theo từng chủ đề:
 - Chọn bài cần chạy trong thư mục tương ứng
 Hình ảnh giao diện bài tập:
 - RecyclerView
+
 | Input | Result |
 |--------------|--------|
 | ![Input](Images/RecyclerView.png) | ![Result](Images/RecyclerView.png) |

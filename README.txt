@@ -25,5 +25,5 @@ Hình ảnh giao diện bài tập:
 - RecyclerView
 
 | Input | Result |
-|--------------|--------|
-| ![Input](Images/RecyclerView.png) | ![Result](Images/RecyclerView.png) |
+|--------|---------|
+| ![Input](./Images/RecyclerView.png) | ![Result](./Images/RecyclerView.png) |

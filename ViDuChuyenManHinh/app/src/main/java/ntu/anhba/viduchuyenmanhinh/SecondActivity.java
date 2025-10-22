@@ -23,10 +23,10 @@ public class SecondActivity extends AppCompatActivity {
         // Nhận về Intent
         Intent iNhanDuoc = getIntent();
         // Bóc ra
-        Intent htNhanDuoc = iNhanDuoc.getStringExtra("ht");
+        String htNhanDuoc = iNhanDuoc.getStringExtra("ht");
         // Xử lý
-
-
+        tv_Name = findViewById(R.id.tv_name2);
+        tv_Name.setText(htNhanDuoc);
         //Nút Back
         bt_Back = findViewById(R.id.bt_back);
         bt_Back.setOnClickListener(new View.OnClickListener() {

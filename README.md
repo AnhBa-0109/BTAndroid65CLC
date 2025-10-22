@@ -24,7 +24,17 @@ Các bài tập được chia theo từng chủ đề:
 
 Hình ảnh giao diện bài tập:
 - RecyclerView
+  
+<img src="./Images/RecyclerView.png" width="400" height="1000">
 
-| Input | Result |
-|--------|---------|
-| ![Input](./Images/BMI.png) | ![Result](./Images/BMI.png) |
+- BMIApp
+  
+<img src="./Images/BMI.png" width="400" height="1000">
+
+- TrangCaNhan
+
+<img src="./Images/TrangCaNhan.png" width="400" height="1000">
+
+- UnitConvert
+
+<img src="./Images/Unit.png" width="400" height="1000">

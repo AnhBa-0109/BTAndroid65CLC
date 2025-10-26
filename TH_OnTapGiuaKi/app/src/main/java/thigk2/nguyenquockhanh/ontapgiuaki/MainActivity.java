@@ -44,7 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(iDsMon);
             }
         });
-
+        bt_hdTruong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iDsHoatDong = new Intent(MainActivity.this, HoatDongActivity.class);
+                startActivity(iDsHoatDong);
+            }
+        });
 
     }
 }

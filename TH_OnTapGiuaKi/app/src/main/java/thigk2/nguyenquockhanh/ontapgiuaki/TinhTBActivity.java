@@ -41,7 +41,7 @@ public class TinhTBActivity extends AppCompatActivity {
 
                 Double kq = (DiemGK*0.5) + (DiemCK*0.5);
 
-                String strkq = String.valueOf(kq);
+                String strkq = String.format("%.2f",kq);
 
                 output_kq.getEditText().setText(strkq);
             }

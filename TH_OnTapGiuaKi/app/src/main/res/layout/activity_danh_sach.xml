@@ -7,11 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".DanhSachActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginBottom="1dp"
+        android:layout_height="0dp"
         android:background="@drawable/header_background"
         android:gravity="center"
         android:orientation="horizontal"
@@ -24,25 +23,47 @@
             android:id="@+id/imageView4"
             android:layout_width="88dp"
             android:layout_height="88dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@mipmap/logo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/inter_bold"
             android:text="Danh sách môn học"
-            android:textSize="25dp"></TextView>
-    </LinearLayout>
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tv_back2"
+            android:layout_width="29dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:elevation="4dp"
+            app:icon="@drawable/outline_arrow_back_24"
+            app:iconGravity="textStart"
+            app:iconSize="24dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ListView
         android:id="@+id/lv_dsMon"
-        android:layout_width="409dp"
-        android:layout_height="739dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
         android:background="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

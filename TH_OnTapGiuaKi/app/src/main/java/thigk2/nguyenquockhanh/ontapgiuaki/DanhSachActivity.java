@@ -1,11 +1,13 @@
 package thigk2.nguyenquockhanh.ontapgiuaki;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -14,12 +16,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.button.MaterialButton;
+
 import java.util.ArrayList;
 
 public class DanhSachActivity extends AppCompatActivity {
     ListView lv_dsMon;
     ArrayList<String> dsMon = new ArrayList<String>();
     ArrayAdapter<String> dsAdapter;
+    MaterialButton tv_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +46,15 @@ public class DanhSachActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String MonDuocChon = dsAdapter.getItem(position).toString();
                 Toast.makeText(DanhSachActivity.this,"Môn được chọn: " +MonDuocChon,Toast.LENGTH_LONG).show();
+            }
+        });
+        tv_back = findViewById(R.id.tv_back2);
+
+        tv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iBack = new Intent(DanhSachActivity.this, MainActivity.class);
+                startActivity(iBack);
             }
         });
     }

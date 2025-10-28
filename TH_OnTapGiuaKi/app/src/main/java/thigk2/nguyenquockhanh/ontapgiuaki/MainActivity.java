@@ -51,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(iDsHoatDong);
             }
         });
+        bt_Aboutme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iAboutme= new Intent(MainActivity.this, AboutMe.class);
+                startActivity(iAboutme);
+            }
+        });
 
     }
 }

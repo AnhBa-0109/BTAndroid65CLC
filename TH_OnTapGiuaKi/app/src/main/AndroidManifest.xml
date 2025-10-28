@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnTapGiuaKi">
         <activity
+            android:name=".AboutMe"
+            android:exported="false" />
+        <activity
             android:name=".HoatDongActivity"
             android:exported="false" />
         <activity

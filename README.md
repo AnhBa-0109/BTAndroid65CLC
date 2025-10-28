@@ -23,9 +23,6 @@ Các bài tập được chia theo từng chủ đề:
 - Chọn bài cần chạy trong thư mục tương ứng
 
 Hình ảnh giao diện bài tập:
-- RecyclerView
-  
-<img src="./Images/RecyclerView.png" width="400" height="1000">
 
 - BMIApp
   

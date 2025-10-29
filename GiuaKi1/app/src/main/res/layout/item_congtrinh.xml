@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/border_layout"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    <TextView
+        android:id="@+id/maincontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Công trình 1"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="10dp">
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DED9D9">
+    </View>
+    <TextView
+        android:id="@+id/ngaydang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:hint="Thời gian đăng"
+        android:textSize="20dp"
+        android:padding="10dp">
+    </TextView>
+</LinearLayout>

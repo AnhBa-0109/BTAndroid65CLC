@@ -32,6 +32,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(iTinhDT);
             }
         });
-
+        bt_Vatlieu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iVatLieu = new Intent(MainActivity.this, VatLieuActivity.class);
+                startActivity(iVatLieu);
+            }
+        });
+        bt_CongTrinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iCongTrinh = new Intent(MainActivity.this, CongTrinhActivity.class);
+                startActivity(iCongTrinh);
+            }
+        });
+        bt_GioiThieu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iGioiThieu = new Intent(MainActivity.this, GioiThieuActivity.class);
+                startActivity(iGioiThieu);
+            }
+        });
     }
 }

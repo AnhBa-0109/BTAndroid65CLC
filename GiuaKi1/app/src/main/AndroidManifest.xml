@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GiuaKi1">
         <activity
+            android:name=".GioiThieuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CongTrinhActivity"
+            android:exported="false" />
+        <activity
             android:name=".VatLieuActivity"
             android:exported="false" />
         <activity

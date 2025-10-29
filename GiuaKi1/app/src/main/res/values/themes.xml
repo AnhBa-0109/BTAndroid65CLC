@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GiuaKi1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#CCE5FF</item>
+        <item name="colorOnPrimary">#171717</item>
+    </style>
+
+    <style name="Theme.GiuaKi1" parent="Base.Theme.GiuaKi1" />
+</resources>

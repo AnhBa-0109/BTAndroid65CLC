@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.VD_NavigationDrawer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">#E07A7A</item>-->
+    </style>
+
+    <style name="Theme.VD_NavigationDrawer" parent="Base.Theme.VD_NavigationDrawer" />
+</resources>

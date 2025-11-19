@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "893345020948",
+    "project_id": "android-projects-f74f7",
+    "storage_bucket": "android-projects-f74f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893345020948:android:fdb5f2ec1853aa8f5bbb01",
+        "android_client_info": {
+          "package_name": "vn.edu.nguyenquockhanh.th_quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL2uB1KoCwGWB5FUL9wDIAcRc6_bOLQhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

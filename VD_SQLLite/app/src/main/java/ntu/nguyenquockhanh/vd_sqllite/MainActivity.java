@@ -1,5 +1,6 @@
 package ntu.nguyenquockhanh.vd_sqllite;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,16 +10,21 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        //Tạo CSDL
+        db = openOrCreateDatabase("books.db", MODE_PRIVATE, null);
+        //Tạo bảng book
+        String sqlXoaBang = "DROP TABLE IF EXISTS BOOKS";
+        String sqlTaoBang = "CREATE TABLE BOOKS(BookID interger PRIMARY KEY, BookName text, Page interger, Price Float, Description text)";
+
+        db.execSQL(sqlXoaBang);
+        db.execSQL(sqlTaoBang);
+
+        db.close();
     }
 }

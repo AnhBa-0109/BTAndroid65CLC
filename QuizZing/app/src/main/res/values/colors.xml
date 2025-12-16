@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="background_dark">#120B29</color>
-    <color name="gradient_top">#1E1634</color>
-    <color name="white">#FFFFFF</color>
-    <color name="button_primary">#2b2bee</color>
-    <color name="button_secondary">#2C253C</color>
-</resources>
